@@ -18,8 +18,8 @@ export default function Header() {
 
   return (
     <header className="relative z-30 px-5 pt-6 md:px-10 lg:px-20">
-      <nav className="flex flex-wrap items-start gap-4 md:items-center">
-        <div className="flex items-center gap-3">
+      <nav className="flex  flex-wrap items-start gap-4 md:items-center">
+        <div className="flex  items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-md bg-white">
             <svg viewBox="0 0 22 22" className="h-5 w-5 fill-[#2e2e82] md:h-6 md:w-6" aria-hidden="true">
               <rect x="1" y="1" width="8" height="8" rx="1.5" />
@@ -40,15 +40,15 @@ export default function Header() {
           type="button"
           aria-label="Toggle navigation"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="ms-auto inline-flex rounded-lg border border-white/60 px-3 py-2 text-base text-white md:hidden"
+          className="ms-auto inline-flex  rounded-lg border border-white/60 px-3 py-2 text-base text-white lg:hidden"
         >
           &#9776;
         </button>
 
         <ul
           className={`${
-            isOpen ? "max-h-80 opacity-100" : "pointer-events-none max-h-0 opacity-0 md:pointer-events-auto md:max-h-none md:opacity-100"
-          } mt-2 flex w-full flex-col gap-3 overflow-hidden rounded-xl border border-white/15 bg-[#141852f2] px-4 py-3 text-base transition-all duration-300 md:mt-0 md:w-auto md:flex-1 md:flex-row md:items-center md:justify-center md:gap-9 md:border-0 md:bg-transparent md:p-0 md:text-[15px]`}
+            isOpen ? "max-h-80 opacity-100" : "pointer-events-none max-h-0 opacity-0 md:pointer-events-auto md:max-h-none lg:opacity-100"
+          } mt-2 flex w-full flex-col gap-3 overflow-hidden rounded-xl border border-white/15 bg-[#141852f2] px-4 py-3 text-base transition-all duration-300 lg:mt-0 lg:w-auto lg:flex-1 lg:flex-row lg:items-center lg:justify-center lg:gap-9 lg:border-0 lg:bg-transparent lg:p-0 md:text-[15px]`}
         >
           {navLinks.map((link) => (
             <li key={link.label}>
@@ -66,7 +66,7 @@ export default function Header() {
           ))}
         </ul>
 
-        <Link href="/contact" className="hidden rounded-full border-2 border-white bg-[#2e2e82] px-6 py-2.5 text-sm font-bold tracking-[0.7px] text-white transition hover:border-[#f5c518] hover:bg-[#f5c518] hover:text-[#2e2e82] md:inline-block">
+        <Link href="/contact" className="hidden rounded-full border-2 border-white bg-[#2e2e82] px-6 py-2.5 text-sm font-bold tracking-[0.7px] text-white transition hover:border-[#f5c518] hover:bg-[#f5c518] hover:text-[#2e2e82] lg:inline-block">
           SIGN UP
         </Link>
       </nav>

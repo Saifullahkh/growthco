@@ -1,5 +1,4 @@
 import Header from "@/src/components/Header";
-import Footer from "@/src/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +14,15 @@ export default function ContactPage() {
                 <stop offset="70%" stopColor="#26246b" />
               </linearGradient>
             </defs>
-            <path d="M0 0 L71 0 L89 20 L69 100 L0 100 Z"></path>
+            <path
+              className="hidden lg:block "
+              d="M0 0 L71 0 L89 20 L69 100 L0 100 Z"
+            ></path>
+
+            <path
+              className="block lg:hidden"
+              d="M0 0 L100 0 L110 20 L69 100 L0 100 Z"
+            ></path>
           </svg>
         </div>
 
